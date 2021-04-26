@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8" />
+        <title>Formulario 2</title>
+        <style>
+            form{
+                padding: 1em;
+                border: 5px solid #CCC;
+            }
+
+            ul {
+                list-style: none;
+                padding: 0;
+                margin: 0;
+            }
+
+            form li + li {
+                margin-top: 1em;
+            }
+
+            label {
+                display: inline-block;
+                width: 90px;
+                text-align: right;
+            }
+        </style>
+    </head>
+    <body>
+        <form action="https://blank.com" method="post">
+            <ul>
+                <li>
+                    <label for="correo">E-mail: </label>
+                    <input type="text" id="email" name="user_mail">
+                </li>
+                <li>
+                    <label for="contraseña">Contraseña:</label>
+                    <input type="password" id="password" name="user_pass">
+                </li>
+                <fieldset>
+                    <legend>Que pelicula vas a ver hoy?</legend>
+                    <p>
+                        <input type="checkbox" name="pelicula1" value="Mank">Mank<br>
+                        <input type="checkbox" name="pelicula2" value="Parasite">Parasite<br>
+                        <input type="checkbox" name="pelicula3" value="Split">Split
+                    </p>
+                    <p><input type="submit" value="Enviar respuestas"></p>
+                </fieldset>
+            </ul>
+        </form>
+    </body>
+</html>
+
+
+
